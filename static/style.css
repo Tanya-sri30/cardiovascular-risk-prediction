@@ -30,8 +30,9 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 40px 20px 20px;
 }
+
 
 .card {
     background: #ffffff;
@@ -231,5 +232,54 @@ ul li {
 
     h2 {
         font-size: 1.4rem;
+    }
+}
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    width: 100%;
+    background: #ffffff;
+    padding: 14px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-brand {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    font-weight: 600;
+    color: #2563eb;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.nav-links li a:hover {
+    background: #eef2ff;
+    text-decoration: none;
+}
+
+/* Mobile navbar */
+@media (max-width: 600px) {
+    .nav-links {
+        gap: 12px;
+        font-size: 0.9rem;
     }
 }
