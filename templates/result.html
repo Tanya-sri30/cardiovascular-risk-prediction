@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Risk Prediction Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <h2>10-Year Heart Disease Risk Result</h2>
+        <p class="text-muted" style="text-align:center;">
+            Preventive Cardiovascular Risk Assessment
+        </p>
+
+        <!-- RISK BADGE -->
+        <div style="text-align:center; margin-top:20px;">
+            {% if risk == "Low Risk" %}
+                <span class="badge bg-success">Low Risk (0–20%)</span>
+            {% elif risk == "Medium Risk" %}
+                <span class="badge bg-warning">Moderate Risk (20–40%)</span>
+            {% else %}
+                <span class="badge bg-danger">High Risk (40%+)</span>
+            {% endif %}
+        </div>
+
+        <!-- PROBABILITY -->
+        <h3 style="text-align:center; margin-top:15px;">
+            {{ probability }}%
+        </h3>
+        <p class="text-muted" style="text-align:center;">
+            Estimated probability of developing heart disease within the next 10 years
+        </p>
+
+        <!-- ADVICE SECTION -->
+        <div class="section-title">Healthy Heart Advice & Lifestyle Tips</div>
+
+        {% if risk == "Low Risk" %}
+        <ul>
+            <li>Continue following a balanced diet rich in fruits, vegetables, and whole grains</li>
+            <li>Engage in regular physical activity (at least 30 minutes a day)</li>
+            <li>Avoid smoking and limit alcohol intake</li>
+            <li>Maintain a healthy body weight and waist circumference</li>
+            <li>Get routine health checkups to monitor blood pressure and cholesterol</li>
+        </ul>
+
+        {% elif risk == "Medium Risk" %}
+        <ul>
+            <li>Reduce intake of salty, sugary, and processed foods</li>
+            <li>Increase aerobic activities like brisk walking, cycling, or swimming</li>
+            <li>Practice stress-management techniques such as meditation or deep breathing</li>
+            <li>Monitor blood pressure, cholesterol, and blood sugar levels regularly</li>
+            <li>Consider consulting a healthcare professional for preventive guidance</li>
+        </ul>
+
+        {% else %}
+        <ul>
+            <li>Consult a healthcare professional for a detailed cardiovascular evaluation</li>
+            <li>Strictly avoid smoking and minimize alcohol consumption</li>
+            <li>Follow a medically recommended heart-healthy diet (low fat, low sugar)</li>
+            <li>Engage only in doctor-approved physical activity</li>
+            <li>Monitor vital health parameters (BP, glucose, cholesterol) frequently</li>
+        </ul>
+        {% endif %}
+
+        <!-- QUICK DAILY HEART CARE TIPS -->
+        <div class="section-title">Daily Heart-Healthy Habits</div>
+        <ul>
+            <li>Stay physically active — avoid long sitting hours</li>
+            <li>Drink enough water and get 7–8 hours of quality sleep</li>
+            <li>Manage stress through hobbies, relaxation, or mindfulness</li>
+            <li>Include healthy fats (nuts, seeds, olive oil) in moderation</li>
+            <li>Listen to your body and seek medical advice when needed</li>
+        </ul>
+
+        <!-- DISCLAIMER -->
+        <p class="disclaimer">
+            ⚠️ This result represents a <strong>statistical risk estimate</strong> based on population data.
+            It is not a medical diagnosis. Always consult a qualified healthcare professional
+            for medical advice.
+        </p>
+
+        <!-- ACTION BUTTON -->
+        <div class="button-center">
+            <a href="/predict" class="btn btn-primary">
+                🔁 Check Another Profile
+            </a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

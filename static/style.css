@@ -1,0 +1,235 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #eef2f7;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #2563eb;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: #ffffff;
+    max-width: 850px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   HEADINGS & TEXT
+========================= */
+h1, h2 {
+    text-align: center;
+    color: #1f2937;
+}
+
+h3 {
+    color: #1f2937;
+    margin-bottom: 6px;
+}
+
+.text-muted {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+.section-title {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #111827;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #1e40af;
+}
+
+.button-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* =========================
+   FORM STYLES
+========================= */
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: 600;
+    margin-top: 15px;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 0.95rem;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button[type="submit"] {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background: #16a34a;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #15803d;
+}
+
+/* Helper text under inputs */
+.helper-text {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+/* =========================
+   INFO CARDS (INDEX PAGE)
+========================= */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.info-card {
+    background: #f9fbff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+}
+
+.info-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.info-card p {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+/* =========================
+   BADGES (RESULT PAGE)
+========================= */
+.badge {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.bg-success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.bg-warning {
+    background: #fef9c3;
+    color: #854d0e;
+}
+
+.bg-danger {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* =========================
+   LISTS (ADVICE)
+========================= */
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* =========================
+   DISCLAIMER
+========================= */
+.disclaimer {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #6b7280;
+    text-align: center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+    .card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Disease Risk Predictor</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <h1>❤️ Heart Health Risk Assessment</h1>
+        <p class="text-muted" style="text-align:center;">
+            A preventive tool to estimate your <strong>10-year risk of heart disease</strong>
+            using lifestyle and basic health indicators.
+        </p>
+
+        <p class="disclaimer">
+            ⚠️ This tool provides a statistical risk estimate and is not a medical diagnosis.
+        </p>
+
+        <!-- HEART HEALTH INFO CARDS -->
+        <div class="info-grid">
+
+            <div class="info-card">
+                <h3>🫀 Why Heart Health Matters</h3>
+                <p>
+                    Heart disease is one of the leading causes of death worldwide.
+                    Many cases can be prevented through early risk awareness and
+                    healthy lifestyle choices.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>🥗 Lifestyle & Diet</h3>
+                <p>
+                    A balanced diet, regular exercise, stress management, and
+                    avoiding smoking play a major role in keeping your heart healthy.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>📊 Risk-Based Prediction</h3>
+                <p>
+                    This system uses population-level data to estimate long-term
+                    cardiovascular risk rather than diagnosing current disease.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>🧠 Early Awareness</h3>
+                <p>
+                    Knowing your risk early helps you take preventive action
+                    before serious heart problems develop.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="button-center" style="margin-top:25px;">
+            <a href="/predict" class="btn btn-primary">
+                Check Your Heart Risk
+            </a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
