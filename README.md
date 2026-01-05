@@ -31,61 +31,37 @@ This application provides a statistical risk estimate only and is not a medical 
 
 🛠️ Tech Stack
 🔹 Machine Learning
-
 Python
-
 Pandas, NumPy
-
 Scikit-learn
-
 Logistic Regression
-
 ML Pipelines (Imputation + Scaling)
-
 Joblib (Model Serialization)
 
 🔹 Backend
-
 Flask
-
 Gunicorn (Production Server)
 
 🔹 Frontend
-
 HTML5
-
 CSS3
-
 Responsive UI
-
 Form validation & helper text
 
 🔹 Deployment
-
 GitHub (Version Control)
-
 Render (Cloud Deployment)
 
 📂 Dataset
-
 Framingham Heart Study Dataset
-
 Predicts future cardiovascular risk, not diagnosis
-
 Features include:
-
 Age, Gender
-
 Smoking habits
-
 Blood pressure
-
 Cholesterol
-
 BMI, Glucose
-
 Diabetes, Hypertension, Stroke history
-
 history
 
 🧪 Risk Categories
@@ -95,44 +71,26 @@ Medium Risk  	20 – 40%
 High Risk	    40%+
 
 🚀 How It Works
-
 User enters lifestyle and health details
-
 Input data is processed using the same ML pipeline used during training
-
 Logistic Regression model predicts risk probability
-
 Result is mapped to Low / Medium / High risk
-
 User receives personalized health guidance
 
 🧠 Key Learnings
 
 Correct dataset selection is critical for ML success
-
 Pipelines prevent data leakage
-
 Probability-based predictions require domain thresholds
-
 Frontend–backend alignment is essential in Flask
-
 Ethical responsibility is crucial in healthcare ML
 
-ML
-
 📈 Future Improvements
-
 Feature importance visualization
-
 Downloadable PDF health report
-
 About page explaining model & dataset
-
 User analytics dashboard
-
 Dark mode UI
-
-UI
 
 👩‍💻 Author
 
